@@ -7,7 +7,7 @@ scipy>=1.7.0
 librosa>=0.9.0
 pyaudio>=0.2.11
 ffmpeg-python>=0.2.0
-
+bcsdhcsd,
 # README.md
 
 # Truth Weaver AI Detective - The Whispering Shadows Mystery
