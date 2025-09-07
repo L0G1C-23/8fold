@@ -209,16 +209,6 @@ self.recognizer.pause_threshold = 0.8         # Pause detection sensitivity
 self.recognizer.dynamic_energy_threshold = True  # Auto-adjust to environment
 ```
 
-### Analysis Sensitivity
-```python
-# In DeceptionAnalyzer
-# Modify pattern dictionaries for different languages or contexts
-self.skill_indicators = {
-    'languages': ['python', 'java', ...],  # Add more programming languages
-    'frameworks': ['django', 'flask', ...], # Add more frameworks
-}
-```
-
 ## 🐛 Troubleshooting
 
 ### Common Issues
@@ -226,14 +216,8 @@ self.skill_indicators = {
 1. **Audio not transcribing**
    - Check if FFmpeg is properly installed
    - Verify audio file format compatibility
-   - Try enhancing audio quality manually
 
-2. **Low transcription accuracy**
-   - Increase audio quality/volume
-   - Reduce background noise
-   - Try different microphone settings
-
-3. **Missing dependencies**
+2. **Missing dependencies**
    - Ensure all packages in requirements.txt are installed
    - Install system-level audio libraries (portaudio, ffmpeg)
 
@@ -243,36 +227,7 @@ self.skill_indicators = {
 - **"Transcription failed"**: Verify audio file accessibility and format
 - **"Processing failed"**: Check file paths and permissions
 
-## 📊 Performance Tips
 
-1. **For better accuracy**:
-   - Use high-quality audio recordings (16kHz+)
-   - Minimize background noise
-   - Ensure clear speech in recordings
 
-2. **For faster processing**:
-   - Use WAV format for input files
-   - Reduce audio length when possible
-   - Run on systems with adequate RAM
 
-## 🏆 Evaluation Metrics
-
-The solution is evaluated on:
-
-1. **Transcript Accuracy**: Character-level similarity using normalized Levenshtein distance
-2. **Truth Extraction**: Jaccard similarity score on JSON fields with semantic equivalence
-
-## 📞 Support
-
-For issues specific to this implementation:
-- Check the troubleshooting section above
-- Review the error logs for specific error messages
-- Ensure all dependencies are correctly installed
-
-For hackathon-related questions:
-- Join the WhatsApp group: https://chat.whatsapp.com/HXBXou2RZdNBlfoc9zgBIv
 - Access datasets: https://drive.google.com/drive/folders/1ADUGc0X1-WKu5HT8e0tRNcI-21h2Db9y
-
----
-
-*May your algorithms pierce every shadow.* 🕵️‍♂️✨
