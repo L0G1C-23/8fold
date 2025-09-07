@@ -70,6 +70,9 @@ sudo apt install portaudio19-dev python3-pyaudio
 ```bash
 brew install portaudio
 ```
+**On Windows**
+-pip install pyaudio
+
 
 ## 🚀 Usage
 
@@ -98,6 +101,8 @@ shadow_id = "your_shadow_id"
 ```
 
 ### Advanced Usage
+
+Create a new file named result.py and write this code. This will give output of the JSON and txt file for the evaluation, but it will give the output on test case.
 
 ```python
 from truth_weaver import TruthWeaver
@@ -228,6 +233,6 @@ self.recognizer.dynamic_energy_threshold = True  # Auto-adjust to environment
 - **"Processing failed"**: Check file paths and permissions
 
 
-
+## Data
 
 - Access datasets: https://drive.google.com/drive/folders/1ADUGc0X1-WKu5HT8e0tRNcI-21h2Db9y
