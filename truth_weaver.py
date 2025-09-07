@@ -65,7 +65,10 @@ class AudioProcessor:
             audio = audio.low_pass_filter(8000)
             
             # Export enhanced audio
-            enhanced_path = audio_path.replace('.', '_enhanced.')
+            # enhanced_path = audio_path.replace('.', '_enhanced.')
+            # audio.export(enhanced_path, format="wav")
+            base, ext = os.path.splitext(audio_path)
+            enhanced_path = base + "_enhanced.wav"
             audio.export(enhanced_path, format="wav")
             
             return enhanced_path
@@ -421,11 +424,11 @@ def main():
     
     # Example usage - replace with actual audio files
     audio_files = [
-        "C:\Users\Devraj\OneDrive - IIT Delhi\Desktop\INNOV8 3.0-20250907T060749Z-1-001\INNOV8 3.0\shadow_session1.mp3",
-        "C:\Users\Devraj\OneDrive - IIT Delhi\Desktop\INNOV8 3.0-20250907T060749Z-1-001\INNOV8 3.0\shadow_session2.mp3",
-        "C:\Users\Devraj\OneDrive - IIT Delhi\Desktop\INNOV8 3.0-20250907T060749Z-1-001\INNOV8 3.0\shadow_session3.mp3",
-        "C:\Users\Devraj\OneDrive - IIT Delhi\Desktop\INNOV8 3.0-20250907T060749Z-1-001\INNOV8 3.0\shadow_session4.mp3",
-        "C:\Users\Devraj\OneDrive - IIT Delhi\Desktop\INNOV8 3.0-20250907T060749Z-1-001\INNOV8 3.0\shadow_session5.mp3",
+        r"C:\Users\Devraj\OneDrive - IIT Delhi\Desktop\INNOV8 3.0-20250907T060749Z-1-001\INNOV8 3.0\shadow_session1.mp3",
+        r"C:\Users\Devraj\OneDrive - IIT Delhi\Desktop\INNOV8 3.0-20250907T060749Z-1-001\INNOV8 3.0\shadow_session2.mp3",
+        r"C:\Users\Devraj\OneDrive - IIT Delhi\Desktop\INNOV8 3.0-20250907T060749Z-1-001\INNOV8 3.0\shadow_session3.mp3",
+        r"C:\Users\Devraj\OneDrive - IIT Delhi\Desktop\INNOV8 3.0-20250907T060749Z-1-001\INNOV8 3.0\shadow_session4.mp3",
+        r"C:\Users\Devraj\OneDrive - IIT Delhi\Desktop\INNOV8 3.0-20250907T060749Z-1-001\INNOV8 3.0\shadow_session5.mp3",
     ]
     
     shadow_id = "phoenix_2024"

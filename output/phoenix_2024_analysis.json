@@ -1,0 +1,23 @@
+{
+  "shadow_id": "phoenix_2024",
+  "revealed_truth": {
+    "programming_experience": "4-6 years",
+    "programming_language": "go",
+    "skill_mastery": "beginner",
+    "leadership_claims": "claimed",
+    "team_experience": "team member",
+    "skills and other keywords": [
+      "ai",
+      "go"
+    ]
+  },
+  "deception_patterns": [
+    {
+      "lie_type": "experience_inflation",
+      "contradictory_claims": [
+        "4 months",
+        "6 years"
+      ]
+    }
+  ]
+}
